@@ -79,8 +79,11 @@ footer{
     min-height: 500px;
     /*Your code here.*/
     /*Don't forget to vertically and horizontally alight the card*/
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -140,6 +143,7 @@ footer{
   /*Your code here again.*/
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .gallery > img{
@@ -157,6 +161,7 @@ header{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 
 }
 
@@ -182,9 +187,15 @@ header{
 
 @media screen and (min-width: 850px){
 
+#logo{
+  margin: 0px;
+}
+
   /* Cards! */
   .card {
     /*Your  code here again.*/
+    /* display: flex; */
+    flex-direction: row;
   }
 
   .card_big{
@@ -195,10 +206,32 @@ header{
   /* Navbar */
   header{
     /*Your code here again.*/
+    /* display: flex; */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* justify-content:  ; */
+    /* align-content: stretch; */
+
+  }
+
+  .pricing{
+      /*Your code here.*/
+      /*Don't forget to vertically and horizontally alight the card*/
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+
   }
 
   .nav_links{
     /*Your code here again.*/
+    flex-direction: row;
+    vertical-align: middle;
+    text-align: right;
+    /* align-content: flex-end; */
   }
 
   .nav_item a{
