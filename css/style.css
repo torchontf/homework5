@@ -79,8 +79,7 @@ footer{
     min-height: 500px;
     /*Your code here.*/
     /*Don't forget to vertically and horizontally alight the card*/
-    display: flex;
-    /* flex-direction: column; */
+    /* display: flex; */
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -188,7 +187,7 @@ header{
 @media screen and (min-width: 850px){
 
 #logo{
-  margin: 0px;
+  margin: 0;
 }
 
   /* Cards! */
